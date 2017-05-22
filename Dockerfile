@@ -21,6 +21,8 @@ RUN apt-get -q update && \
     swift \
     vapor \
     libsqlite3-dev \
+    postgresql \
+    libpq-dev \
     && update-alternatives --quiet --install /usr/bin/clang clang /usr/bin/clang-3.8 100 \
     && update-alternatives --quiet --install /usr/bin/clang++ clang++ /usr/bin/clang++-3.8 100 \
     && rm -r /var/lib/apt/lists/*
